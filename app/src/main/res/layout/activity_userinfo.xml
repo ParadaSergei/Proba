@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userinfo">
+    <EditText
+        android:id="@+id/editTextCompanyInfo"
+        android:layout_width="285dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Редактировать компанию"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAgeInfo" />
+
+    <EditText
+        android:id="@+id/editTextNameInfo"
+        android:layout_width="283dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="Редактировать Имя"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAgeInfo"
+        android:layout_width="283dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Редактировать Возраст"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNameInfo" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="189dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp"
+        android:onClick="ClicktoStore"
+        android:text="@string/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCompanyInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
