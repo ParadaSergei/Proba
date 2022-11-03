@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/program"
-        android:title="О программе">
+        android:title="@string/oprogramm">
         <menu>
              <item
                 android:id="@+id/dark"
-                 android:title="Темная тема"/>
+                 android:title="@string/dark"/>
             <item
                  android:id="@+id/white"
-                  android:title="Светлая тема"/>
+                  android:title="@string/white"/>
         </menu>
     </item>
 </menu>

@@ -15,7 +15,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         super.onCreateOptionsMenu(menu)
-        menu?.add("saf")
+        menu?.add("Светлая тема")
+        menu?.add("Темная тема")
+        menu?.add("О программе")
         return true
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean{
@@ -26,9 +28,8 @@ class MainActivity : AppCompatActivity() {
                     Intent.FLAG_ACTIVITY_CLEAR_TOP or
                             Intent.FLAG_ACTIVITY_SINGLE_TOP)
                 startActivity(intent)
-                item.isChecked = true
-
             }
         }
+        return super.onOptionsItemSelected(item)
     }
 }

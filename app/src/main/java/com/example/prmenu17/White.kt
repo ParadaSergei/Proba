@@ -13,20 +13,16 @@ class White : AppCompatActivity() {
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         super.onCreateOptionsMenu(menu)
-        
+        menuInflater.inflate(R.menu.menu,menu)
         return true
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean{
         when(item.itemId) {
             R.id.white -> {
                 val intent = Intent(this@White, MainActivity::class.java)
-                intent.addFlags(
-                    Intent.FLAG_ACTIVITY_CLEAR_TOP or
-                            Intent.FLAG_ACTIVITY_SINGLE_TOP)
                 startActivity(intent)
-                item.isChecked = true
-
             }
         }
+        return super.onOptionsItemSelected(item)
     }
 }

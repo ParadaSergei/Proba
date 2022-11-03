@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Меню ...</string>
+    <string name="dark">Темная тема</string>
+    <string name="white">Светлая тема</string>
+    <string name="oprogramm">О программе</string>
 
 </resources>
